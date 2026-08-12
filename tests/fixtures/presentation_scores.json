@@ -1,0 +1,32 @@
+[
+  {
+    "team_id": "Team A",
+    "ai_explanation_score": 19,
+    "qa_score": 14,
+    "delivery_score": 15
+  },
+  {
+    "team_id": "Team B",
+    "ai_explanation_score": 17,
+    "qa_score": 13,
+    "delivery_score": 13
+  },
+  {
+    "team_id": "Team C",
+    "ai_explanation_score": 14,
+    "qa_score": 11,
+    "delivery_score": 12
+  },
+  {
+    "team_id": "Team D",
+    "ai_explanation_score": 12,
+    "qa_score": 9,
+    "delivery_score": 10
+  },
+  {
+    "team_id": "Team E",
+    "ai_explanation_score": 8,
+    "qa_score": 7,
+    "delivery_score": 9
+  }
+]

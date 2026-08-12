@@ -1,0 +1,39 @@
+{
+  "match_id": "00000000-0000-0000-0000-000000000001",
+  "actual_winner": "home",
+  "final_score": {
+    "home_team_goals": 2,
+    "away_team_goals": 0
+  },
+  "goal_scorers": {
+    "home": ["Lionel Messi", "Julian Alvarez"],
+    "away": []
+  },
+  "player_results": [
+    {
+      "player_id": "p-arg-1",
+      "player_name": "Lionel Messi",
+      "actual_goals": 1
+    },
+    {
+      "player_id": "p-arg-2",
+      "player_name": "Julian Alvarez",
+      "actual_goals": 1
+    },
+    {
+      "player_id": "p-arg-3",
+      "player_name": "Rodrigo De Paul",
+      "actual_goals": 0
+    },
+    {
+      "player_id": "p-bra-1",
+      "player_name": "Neymar Jr",
+      "actual_goals": 0
+    },
+    {
+      "player_id": "p-bra-2",
+      "player_name": "Vinicius Junior",
+      "actual_goals": 0
+    }
+  ]
+}

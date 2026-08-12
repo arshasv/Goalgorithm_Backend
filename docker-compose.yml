@@ -1,0 +1,10 @@
+services:
+  backend:
+    build:
+      context: .
+    ports:
+      - "8002:8000"
+    env_file: 
+      - .env.pre
+    restart: unless-stopped
+

@@ -1,0 +1,299 @@
+[
+  {
+    "team_id": "Team A",
+    "match_id": "match-001",
+    "submission_id": "sub-a-01",
+    "match_prediction": {
+      "predicted_winner": "home",
+      "predicted_scoreline": {
+        "home_team_goals": 2,
+        "away_team_goals": 0
+      },
+      "probabilities": {
+        "home_win_probability": 65.0,
+        "draw_probability": 22.0,
+        "away_win_probability": 13.0
+      },
+      "clean_sheet_probability": {
+        "home_team": 55.0,
+        "away_team": 10.0
+      },
+      "first_goal_team": "home",
+      "both_teams_to_score_probability": 35.0,
+      "total_goals_prediction": 2,
+      "goal_scorers": {
+        "home": ["Lionel Messi", "Julian Alvarez"],
+        "away": []
+      }
+    },
+    "player_predictions": [
+      {
+        "player_id": "p-arg-1",
+        "player_name": "Lionel Messi",
+        "goal_probability": 55.0,
+        "predicted_goals": 1,
+        "assist_probability": 30.0
+      },
+      {
+        "player_id": "p-arg-2",
+        "player_name": "Julian Alvarez",
+        "goal_probability": 40.0,
+        "predicted_goals": 1,
+        "assist_probability": 15.0
+      },
+      {
+        "player_id": "p-arg-3",
+        "player_name": "Rodrigo De Paul",
+        "goal_probability": 10.0,
+        "predicted_goals": 0,
+        "assist_probability": 25.0
+      },
+      {
+        "player_id": "p-bra-1",
+        "player_name": "Neymar Jr",
+        "goal_probability": 25.0,
+        "predicted_goals": 0,
+        "assist_probability": 20.0
+      }
+    ]
+  },
+  {
+    "team_id": "Team B",
+    "match_id": "match-001",
+    "submission_id": "sub-b-01",
+    "match_prediction": {
+      "predicted_winner": "home",
+      "predicted_scoreline": {
+        "home_team_goals": 2,
+        "away_team_goals": 1
+      },
+      "probabilities": {
+        "home_win_probability": 50.0,
+        "draw_probability": 28.0,
+        "away_win_probability": 22.0
+      },
+      "clean_sheet_probability": {
+        "home_team": 35.0,
+        "away_team": 18.0
+      },
+      "first_goal_team": "home",
+      "both_teams_to_score_probability": 55.0,
+      "total_goals_prediction": 3,
+      "goal_scorers": {
+        "home": ["Lionel Messi", "Julian Alvarez"],
+        "away": ["Neymar Jr"]
+      }
+    },
+    "player_predictions": [
+      {
+        "player_id": "p-arg-1",
+        "player_name": "Lionel Messi",
+        "goal_probability": 45.0,
+        "predicted_goals": 1,
+        "assist_probability": 35.0
+      },
+      {
+        "player_id": "p-arg-2",
+        "player_name": "Julian Alvarez",
+        "goal_probability": 30.0,
+        "predicted_goals": 1,
+        "assist_probability": 20.0
+      },
+      {
+        "player_id": "p-arg-3",
+        "player_name": "Rodrigo De Paul",
+        "goal_probability": 15.0,
+        "predicted_goals": 0,
+        "assist_probability": 20.0
+      },
+      {
+        "player_id": "p-bra-1",
+        "player_name": "Neymar Jr",
+        "goal_probability": 30.0,
+        "predicted_goals": 1,
+        "assist_probability": 25.0
+      },
+      {
+        "player_id": "p-bra-2",
+        "player_name": "Vinicius Junior",
+        "goal_probability": 25.0,
+        "predicted_goals": 0,
+        "assist_probability": 20.0
+      }
+    ]
+  },
+  {
+    "team_id": "Team C",
+    "match_id": "match-001",
+    "submission_id": "sub-c-01",
+    "match_prediction": {
+      "predicted_winner": "home",
+      "predicted_scoreline": {
+        "home_team_goals": 1,
+        "away_team_goals": 0
+      },
+      "probabilities": {
+        "home_win_probability": 48.0,
+        "draw_probability": 32.0,
+        "away_win_probability": 20.0
+      },
+      "clean_sheet_probability": {
+        "home_team": 50.0,
+        "away_team": 12.0
+      },
+      "first_goal_team": "home",
+      "both_teams_to_score_probability": 40.0,
+      "total_goals_prediction": 1,
+      "goal_scorers": {
+        "home": ["Lionel Messi"],
+        "away": []
+      }
+    },
+    "player_predictions": [
+      {
+        "player_id": "p-arg-1",
+        "player_name": "Lionel Messi",
+        "goal_probability": 60.0,
+        "predicted_goals": 1,
+        "assist_probability": 20.0
+      },
+      {
+        "player_id": "p-arg-3",
+        "player_name": "Rodrigo De Paul",
+        "goal_probability": 8.0,
+        "predicted_goals": 0,
+        "assist_probability": 30.0
+      },
+      {
+        "player_id": "p-bra-1",
+        "player_name": "Neymar Jr",
+        "goal_probability": 20.0,
+        "predicted_goals": 0,
+        "assist_probability": 15.0
+      }
+    ]
+  },
+  {
+    "team_id": "Team D",
+    "match_id": "match-001",
+    "submission_id": "sub-d-01",
+    "match_prediction": {
+      "predicted_winner": "draw",
+      "predicted_scoreline": {
+        "home_team_goals": 1,
+        "away_team_goals": 1
+      },
+      "probabilities": {
+        "home_win_probability": 30.0,
+        "draw_probability": 45.0,
+        "away_win_probability": 25.0
+      },
+      "clean_sheet_probability": {
+        "home_team": 25.0,
+        "away_team": 25.0
+      },
+      "first_goal_team": "away",
+      "both_teams_to_score_probability": 65.0,
+      "total_goals_prediction": 2,
+      "goal_scorers": {
+        "home": ["Lionel Messi"],
+        "away": ["Neymar Jr"]
+      }
+    },
+    "player_predictions": [
+      {
+        "player_id": "p-arg-1",
+        "player_name": "Lionel Messi",
+        "goal_probability": 35.0,
+        "predicted_goals": 1,
+        "assist_probability": 20.0
+      },
+      {
+        "player_id": "p-bra-1",
+        "player_name": "Neymar Jr",
+        "goal_probability": 40.0,
+        "predicted_goals": 1,
+        "assist_probability": 25.0
+      },
+      {
+        "player_id": "p-bra-2",
+        "player_name": "Vinicius Junior",
+        "goal_probability": 20.0,
+        "predicted_goals": 0,
+        "assist_probability": 15.0
+      },
+      {
+        "player_id": "p-arg-3",
+        "player_name": "Rodrigo De Paul",
+        "goal_probability": 10.0,
+        "predicted_goals": 0,
+        "assist_probability": 20.0
+      }
+    ]
+  },
+  {
+    "team_id": "Team E",
+    "match_id": "match-001",
+    "submission_id": "sub-e-01",
+    "match_prediction": {
+      "predicted_winner": "away",
+      "predicted_scoreline": {
+        "home_team_goals": 0,
+        "away_team_goals": 3
+      },
+      "probabilities": {
+        "home_win_probability": 15.0,
+        "draw_probability": 25.0,
+        "away_win_probability": 60.0
+      },
+      "clean_sheet_probability": {
+        "home_team": 8.0,
+        "away_team": 45.0
+      },
+      "first_goal_team": "away",
+      "both_teams_to_score_probability": 50.0,
+      "total_goals_prediction": 3,
+      "goal_scorers": {
+        "home": [],
+        "away": ["Neymar Jr", "Neymar Jr", "Vinicius Junior"]
+      }
+    },
+    "player_predictions": [
+      {
+        "player_id": "p-bra-1",
+        "player_name": "Neymar Jr",
+        "goal_probability": 65.0,
+        "predicted_goals": 2,
+        "assist_probability": 20.0
+      },
+      {
+        "player_id": "p-bra-2",
+        "player_name": "Vinicius Junior",
+        "goal_probability": 45.0,
+        "predicted_goals": 1,
+        "assist_probability": 30.0
+      },
+      {
+        "player_id": "p-arg-1",
+        "player_name": "Lionel Messi",
+        "goal_probability": 15.0,
+        "predicted_goals": 0,
+        "assist_probability": 10.0
+      },
+      {
+        "player_id": "p-arg-2",
+        "player_name": "Julian Alvarez",
+        "goal_probability": 10.0,
+        "predicted_goals": 0,
+        "assist_probability": 10.0
+      },
+      {
+        "player_id": "p-arg-3",
+        "player_name": "Rodrigo De Paul",
+        "goal_probability": 5.0,
+        "predicted_goals": 0,
+        "assist_probability": 15.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "team_id": "Team A",
+    "code_quality": 5,
+    "backend_quality": 5,
+    "teamwork": 4,
+    "ai_explanation": 5
+  },
+  {
+    "team_id": "Team B",
+    "code_quality": 4,
+    "backend_quality": 4,
+    "teamwork": 5,
+    "ai_explanation": 4
+  },
+  {
+    "team_id": "Team C",
+    "code_quality": 3,
+    "backend_quality": 4,
+    "teamwork": 3,
+    "ai_explanation": 3
+  },
+  {
+    "team_id": "Team D",
+    "code_quality": 3,
+    "backend_quality": 2,
+    "teamwork": 4,
+    "ai_explanation": 3
+  },
+  {
+    "team_id": "Team E",
+    "code_quality": 2,
+    "backend_quality": 2,
+    "teamwork": 2,
+    "ai_explanation": 2
+  }
+]

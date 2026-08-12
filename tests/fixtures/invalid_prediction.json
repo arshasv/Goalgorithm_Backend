@@ -1,0 +1,25 @@
+{
+  "team_id": "",
+  "match_id": "match-045",
+  "submission_id": "sub-790",
+  "match_prediction": {
+    "predicted_winner": "invalid_value",
+    "predicted_scoreline": {
+      "home_team_goals": -2,
+      "away_team_goals": 1
+    },
+    "probabilities": {
+      "home_win_probability": 150.0,
+      "draw_probability": 25.0,
+      "away_win_probability": 20.0
+    },
+    "clean_sheet_probability": {
+      "home_team": 30.0,
+      "away_team": 15.0
+    },
+    "first_goal_team": "home",
+    "both_teams_to_score_probability": 60.0,
+    "total_goals_prediction": 3
+  },
+  "player_predictions": []
+}

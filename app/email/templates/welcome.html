@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; background: #f4f4f6; }
+    .container { max-width: 560px; margin: 40px auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .header { background: #1a1a2e; padding: 32px 40px; text-align: center; }
+    .header h1 { color: #ffffff; margin: 0; font-size: 22px; font-weight: 600; }
+    .body { padding: 32px 40px; }
+    .body p { color: #374151; line-height: 1.6; margin: 0 0 16px; font-size: 15px; }
+    .credentials { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    .credentials dt { font-size: 12px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+    .credentials dd { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 16px; color: #111827; margin: 0 0 16px; padding: 8px 12px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 4px; }
+    .credentials dd:last-child { margin-bottom: 0; }
+    .btn { display: inline-block; background: #2563eb; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 6px; font-weight: 500; font-size: 14px; margin-top: 8px; }
+    .footer { padding: 24px 40px; text-align: center; border-top: 1px solid #e5e7eb; }
+    .footer p { color: #9ca3af; font-size: 13px; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to FIFA Scoring System</h1>
+    </div>
+    <div class="body">
+      <p>Hi <strong>{name}</strong>,</p>
+      <p>Your account has been created successfully. You can now log in and start submitting predictions for your team.</p>
+
+      <div class="credentials">
+        <dl>
+          <dt>Email</dt>
+          <dd>{email}</dd>
+          <dt>Temporary Password</dt>
+          <dd>{temporary_password}</dd>
+        </dl>
+      </div>
+
+      <p><strong>Important:</strong> For security reasons, please change your password after your first login.</p>
+
+      <p style="text-align:center;">
+        <a href="{login_url}" class="btn">Log In Now</a>
+      </p>
+
+      <p>If you have any questions, please contact the tournament organizer.</p>
+      <p>Best regards,<br>FIFA Scoring System Team</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2026 FIFA Scoring System. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

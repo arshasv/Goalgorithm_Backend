@@ -1,0 +1,44 @@
+{
+  "team_id": "team-001",
+  "match_id": "match-045",
+  "submission_id": "sub-789",
+  "match_prediction": {
+    "predicted_winner": "home",
+    "predicted_scoreline": {
+      "home_team_goals": 2,
+      "away_team_goals": 1
+    },
+    "probabilities": {
+      "home_win_probability": 55.0,
+      "draw_probability": 25.0,
+      "away_win_probability": 20.0
+    },
+    "clean_sheet_probability": {
+      "home_team": 30.0,
+      "away_team": 15.0
+    },
+    "first_goal_team": "home",
+    "both_teams_to_score_probability": 60.0,
+    "total_goals_prediction": 3,
+    "goal_scorers": {
+      "home": ["Lionel Messi", "Julian Alvarez"],
+      "away": ["Vinicius Junior"]
+    }
+  },
+  "player_predictions": [
+    {
+      "player_id": "p-1001",
+      "player_name": "Player One",
+      "goal_probability": 40.0,
+      "predicted_goals": 1,
+      "assist_probability": 25.0
+    },
+    {
+      "player_id": "p-1002",
+      "player_name": "Player Two",
+      "goal_probability": 20.0,
+      "predicted_goals": 0,
+      "assist_probability": 35.0
+    }
+  ]
+}

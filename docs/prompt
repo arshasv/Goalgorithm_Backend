@@ -1,0 +1,841 @@
+========================================
+PHASE 0 — INITIAL PROJECT + README
+========================================
+
+Create the FIFA Challenge Scoring System repository.
+
+The system is NOT the participant AI model.
+It is the backend scoring engine used by organizers.
+
+Use the provided competition document and extract only the scoring system requirements.
+
+Create:
+
+fifa-scoring-system/
+
+├── README.md
+├── docs/
+└── backend/
+
+README.md should explain:
+
+- Project purpose
+- Competition scoring workflow
+- Backend responsibilities
+- Scoring phases
+- Expected architecture
+- Technology stack
+
+No backend implementation yet.
+
+
+
+========================================
+PHASE 1 — FEATURE BASED DOCUMENTATION
+========================================
+
+Use README.md as the source of truth.
+
+Create complete technical documentation.
+
+Do not write backend code.
+
+Create:
+
+docs/
+
+├── features/
+├── api/
+├── database/
+├── architecture/
+├── reviews/
+└── TECHNICAL_DOCUMENTATION.md
+
+
+features/:
+
+Create docs for:
+
+- prediction-management
+- actual-result-management
+- base-scoring-engine
+- ranking-multiplier
+- phase-normalization
+- technical-evaluation
+- presentation-evaluation
+- leaderboard
+
+Each feature doc contains:
+
+Purpose
+Inputs
+Outputs
+Workflow
+Validation
+Related APIs
+Database mapping
+
+
+api/:
+
+Create feature based API docs:
+
+- prediction-api
+- scoring-api
+- evaluation-api
+- leaderboard-api
+
+Include:
+
+Endpoint
+Method
+Request JSON
+Response JSON
+Errors
+
+
+database/:
+
+Create:
+
+database-overview
+schema-design
+feature-database-mapping
+
+Document planned PostgreSQL entities and relationships.
+
+
+architecture/:
+
+Create:
+
+system-architecture
+prediction-architecture
+scoring-architecture
+database-architecture
+leaderboard-architecture
+
+
+Explain flow:
+
+API
+↓
+Schema
+↓
+Service
+↓
+Business Logic
+↓
+Database
+
+
+TECHNICAL_DOCUMENTATION.md should act as the main index.
+
+
+
+========================================
+PHASE 2 — BACKEND STRUCTURE CREATION
+========================================
+
+Create backend structure based on documentation.
+
+Do not implement logic yet.
+
+
+Create:
+
+backend/
+
+app/
+
+├── api/
+├── schemas/
+├── services/
+├── models/
+├── database/
+├── utils/
+└── scoring_engine/
+
+      ├── base_score/
+      ├── multiplier/
+      ├── normalization/
+      └── player_evaluation/
+
+
+Create:
+
+tests/
+
+requirements.txt
+
+main.py
+
+
+Add README files explaining each module.
+
+
+
+========================================
+PHASE 3 — INPUT VALIDATION
+========================================
+
+Implement validation layer.
+
+Use documentation rules.
+
+Create schemas for:
+
+- Prediction submission
+- Actual results
+- Technical evaluation
+- Presentation evaluation
+
+
+Validate:
+
+required fields
+
+datatypes
+
+probability 0-100
+
+negative values
+
+score limits
+
+
+Create sample JSON fixtures:
+
+valid prediction
+
+invalid prediction
+
+actual result
+
+
+Add validation tests.
+
+
+
+========================================
+PHASE 4 — BASE SCORING ENGINE
+========================================
+
+Implement Phase 1 scoring.
+
+Inside:
+
+scoring_engine/base_score/
+
+
+Create:
+
+winner_score.py
+
+scoreline_score.py
+
+probability_score.py
+
+player_score.py
+
+base_score_calculator.py
+
+
+Responsibilities:
+
+winner score calculation
+
+scoreline accuracy
+
+probability accuracy
+
+player prediction accuracy
+
+
+base_score_calculator combines all scores.
+
+Output maximum:
+
+25 points
+
+
+Add tests.
+
+
+
+========================================
+PHASE 5 — RANKING AND MULTIPLIERS
+========================================
+
+Implement ranking system.
+
+Create:
+
+scoring_engine/multiplier/
+
+
+Add:
+
+ranking_engine.py
+
+multiplier_calculator.py
+
+
+Flow:
+
+Team scores
+
+↓
+
+Rank teams
+
+↓
+
+Assign grade
+
+↓
+
+Apply multiplier
+
+↓
+
+Earned points
+
+
+Add tests.
+
+
+
+========================================
+PHASE 6 — SCORE NORMALIZATION
+========================================
+
+Implement normalization module.
+
+Create:
+
+scoring_engine/normalization/
+
+
+Handle:
+
+Phase 1 conversion to /60
+
+Presentation conversion to /20
+
+
+Keep reusable calculation functions.
+
+Add tests.
+
+
+
+========================================
+PHASE 7 — TECHNICAL AND PRESENTATION SCORING
+========================================
+
+Implement remaining phases.
+
+
+Technical:
+
+judge scores
+
+validation
+
+calculate /20
+
+
+Presentation:
+
+raw scores
+
+ranking
+
+multiplier
+
+normalize /20
+
+
+Do not add database yet.
+
+Add tests.
+
+
+
+========================================
+PHASE 8 — API DEVELOPMENT
+========================================
+
+Create FastAPI layer.
+
+Do not rewrite scoring logic.
+
+
+Create endpoints:
+
+POST /api/v1/predictions
+
+POST /api/v1/actual-results
+
+POST /api/v1/calculate-match-score
+
+POST /api/v1/technical-score
+
+POST /api/v1/presentation-score
+
+POST /api/v1/leaderboard/calculate
+
+
+Flow:
+
+API
+
+↓
+
+Schema Validation
+
+↓
+
+Service
+
+↓
+
+Existing scoring modules
+
+↓
+
+Response
+
+
+Add API tests.
+
+
+
+========================================
+PHASE 9 — DOCKER SETUP
+========================================
+
+Dockerize backend.
+
+Create:
+
+Dockerfile
+
+docker-compose.yml
+
+
+Containerize:
+
+FastAPI application
+
+
+Ensure:
+
+Uvicorn starts
+
+Swagger works at:
+
+localhost:8000/docs
+
+
+Prepare compose file for PostgreSQL addition later.
+
+
+
+========================================
+PHASE 10 — POSTGRESQL PLANNING
+========================================
+
+Update database documentation before implementation.
+
+Use:
+
+PostgreSQL
+
+SQLAlchemy
+
+Alembic
+
+
+Plan:
+
+Database connection
+
+ORM models
+
+Migration
+
+Repository layer
+
+Service integration
+
+
+Document models:
+
+Team
+
+Match
+
+Prediction
+
+ActualResult
+
+Score
+
+TechnicalEvaluation
+
+PresentationEvaluation
+
+Leaderboard
+
+
+Update architecture docs.
+
+
+
+========================================
+PHASE 11 — POSTGRESQL INFRASTRUCTURE
+========================================
+
+Add PostgreSQL support.
+
+Do not modify scoring algorithms.
+
+
+Install:
+
+SQLAlchemy
+
+Alembic
+
+psycopg2
+
+python-dotenv
+
+
+Create database infrastructure:
+
+connection
+
+session
+
+configuration
+
+
+Add:
+
+.env
+
+.env.example
+
+
+Use:
+
+DATABASE_URL
+
+
+Docker flow:
+
+FastAPI container
+
+↓
+
+Postgres service
+
+↓
+
+PostgreSQL database
+
+
+
+========================================
+PHASE 12 — ORM MODELS
+========================================
+
+Create SQLAlchemy models.
+
+Follow database documentation.
+
+
+Create models for:
+
+Team
+
+Match
+
+Prediction
+
+ActualResult
+
+Score
+
+TechnicalEvaluation
+
+PresentationEvaluation
+
+Leaderboard
+
+
+Include:
+
+UUID primary keys
+
+Relationships
+
+Foreign keys
+
+Timestamps
+
+
+Create migrations.
+
+
+Do not change scoring engine.
+
+
+
+========================================
+PHASE 13 — REPOSITORY LAYER
+========================================
+
+Create repository layer.
+
+Add:
+
+repositories/
+
+
+Create:
+
+team_repository
+
+prediction_repository
+
+match_repository
+
+score_repository
+
+leaderboard_repository
+
+
+Repositories handle:
+
+create
+
+read
+
+update
+
+delete
+
+
+Services should not directly access database.
+
+
+
+========================================
+PHASE 14 — DATABASE INTEGRATION
+========================================
+
+Connect PostgreSQL with existing backend.
+
+Flow:
+
+API
+
+↓
+
+Validation
+
+↓
+
+Service
+
+↓
+
+Repository
+
+↓
+
+Database
+
+
+Prediction:
+
+save submissions
+
+
+Actual Result:
+
+save results
+
+
+Scoring:
+
+fetch data
+
+run existing scoring engine
+
+store score
+
+
+Leaderboard:
+
+store generated rankings
+
+
+Do not rewrite calculations.
+
+
+
+========================================
+PHASE 15 — ENVIRONMENT CONFIGURATION
+========================================
+
+Create production style config management.
+
+
+Create:
+
+backend/.env
+
+backend/.env.example
+
+
+Include:
+
+APP_NAME
+
+APP_ENV
+
+DEBUG
+
+API_PREFIX
+
+DATABASE_URL
+
+POSTGRES_DB
+
+POSTGRES_USER
+
+POSTGRES_PASSWORD
+
+SECRET_KEY
+
+
+Create centralized config.py.
+
+
+Flow:
+
+.env
+
+↓
+
+config.py
+
+↓
+
+application
+
+
+Remove hardcoded configuration.
+
+
+
+========================================
+PHASE 16 — CENTRALIZED ERROR HANDLING
+========================================
+
+Implement professional exception architecture.
+
+Create:
+
+exceptions/
+
+├── base_exception.py
+├── business_exceptions.py
+├── database_exceptions.py
+└── exception_handler.py
+
+
+Create standard response:
+
+{
+ success:false,
+ error_code:"",
+ message:"",
+ details:{}
+}
+
+
+Handle:
+
+Duplicate prediction → 409
+
+Duplicate actual result → 409
+
+Missing resources → 404
+
+Business errors → 400
+
+Validation errors → 422
+
+Unexpected errors → 500
+
+
+Register handlers globally.
+
+Avoid duplicate try/except blocks.
+
+
+
+========================================
+PHASE 17 — UPDATE ERROR HANDLING DOCUMENTATION
+========================================
+
+Update documentation only.
+
+Add exception handling architecture.
+
+
+Update:
+
+docs/architecture/
+
+docs/api/
+
+docs/features/
+
+TECHNICAL_DOCUMENTATION.md
+
+
+Document flow:
+
+API
+
+↓
+
+Service
+
+↓
+
+Repository
+
+↓
+
+Custom Exception
+
+↓
+
+Global Handler
+
+↓
+
+Standard Error Response
+
+
+Document all error codes and HTTP responses.
+
+Do not modify backend code.
